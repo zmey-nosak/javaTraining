@@ -4,8 +4,6 @@
 *.iml
 classes
 out
-build
-*.class
 
 # Eclipse project files #
 .classpath

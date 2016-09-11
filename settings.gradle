@@ -1,4 +1,4 @@
-rootProject.name = 'JavaTraining'
-
+rootProject.name = 'javaTraining'
 include 'core',
-        'intro'
+        'intro',
+        'oop'
