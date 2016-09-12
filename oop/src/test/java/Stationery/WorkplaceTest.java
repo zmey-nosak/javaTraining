@@ -1,13 +1,15 @@
+package Stationery;
+
 import org.junit.Test;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 /**
- * Created by Echetik on 10.09.2016.
+ * Created by Echetik on 12.09.2016.
  */
 public class WorkplaceTest {
 
@@ -46,7 +48,7 @@ public class WorkplaceTest {
         List<Stationery> lst = new LinkedList<>();
         Stationery stationery = new Notepad(30, 15.75, Brand.Parker);//1
         Stationery stationery2 = new Pencil(Colour.BLACK, false, 60, Brand.Parker);//2
-        Stationery stationery3 = new Ruler(30,99.99,Brand.Carioka);//3
+        Stationery stationery3 = new Ruler(30,99.99, Brand.Carioka);//3
         lst.add(stationery);
         lst.add(stationery2);
         lst.add(stationery3);
@@ -68,7 +70,7 @@ public class WorkplaceTest {
 
         Stationery stationery = new Notepad(30, 15.75, Brand.Parker);//1
         Stationery stationery2 = new Pencil(Colour.BLACK, false, 60, Brand.Parker);//2
-        Stationery stationery3 = new Ruler(30,99.99,Brand.Carioka);//3
+        Stationery stationery3 = new Ruler(30,99.99, Brand.Carioka);//3
 
         lst.add(stationery);
         lst.add(stationery2);
@@ -89,7 +91,7 @@ public class WorkplaceTest {
         List<Stationery> lst = new LinkedList<>();
         Stationery stationery = new Notepad(30, 99.99, Brand.Parker);//2
         Stationery stationery2 = new Pencil(Colour.BLACK, false, 11, Brand.Parker);//1
-        Stationery stationery3 = new Ruler(30,99.99,Brand.Carioka);//3
+        Stationery stationery3 = new Ruler(30,99.99, Brand.Carioka);//3
 
         lst.add(stationery2);
         lst.add(stationery);
