@@ -1,4 +1,5 @@
 rootProject.name = 'javaTraining'
 include 'core',
         'intro',
-        'oop'
+        'oop',
+        'module3'

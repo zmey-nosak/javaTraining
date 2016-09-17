@@ -5,7 +5,7 @@ import java.util.HashSet;
  */
 public class Student {
     private final String name;
-    private HashSet<Group> groupList = new HashSet<>();
+    private HashSet<Discipline> disciplinesList = new HashSet<>();
     private RecordBook recordBook;
 
     public Student(String name) {
@@ -31,16 +31,19 @@ public class Student {
         return name != null ? name.hashCode() : 0;
     }
 
-    public boolean setGroup(Group group) {
-        recordBook.setDisciplines(group.getDisciplines());
-        return groupList.add(group);
+    public boolean setDiscipline(Discipline discipline) {
+        if (disciplinesList.add(discipline)) {
+            recordBook.setDiscipline(discipline);
+            return true;
+        }
+        return false;
     }
 
     public RecordBook getRecordBook() {
         return recordBook;
     }
 
-    public HashSet<Group> getStudentsGroups() {
-        return groupList;
+    public HashSet<Discipline> getStudentsDisciplines() {
+        return disciplinesList;
     }
 }
