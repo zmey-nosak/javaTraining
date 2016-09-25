@@ -1,5 +1,4 @@
 rootProject.name = 'javaTraining'
-include 'core',
-        'intro',
-        'oop',
-        'module3'
+include 'module1_Homework',
+        'module2_Homework',
+        'module3_Homework'
