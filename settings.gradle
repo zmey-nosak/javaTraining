@@ -1,4 +1,5 @@
 rootProject.name = 'javaTraining'
 include 'module1_Homework',
         'module2_Homework',
-        'module3_Homework'
+        'module3_Homework',
+        'module4_Homework'
