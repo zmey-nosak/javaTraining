@@ -5,8 +5,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by Echetik on 08.10.2016.
@@ -120,6 +118,8 @@ public class Command {
             File file = new File(param[0]);
             if (file.isDirectory()) {
                 MyExplorer.currentDirectory = param[0];
+            }else {
+                System.out.println("Не корректная директория");
             }
         } else {
             System.out.println("Не корректный параметр");
