@@ -8,12 +8,6 @@ import java.util.concurrent.Executor;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-//1. "^\s{4}([^ @v]([<\w, \?>])* ([^(]+)\(([^)]*)\)( throws [\w,]+)?);"
-//1. "    default $1 {\n        return get().$3($4);\n    }"
-//2. "^\s{4}(void ([^(]+)\(([^)]*)\)( throws [\w,]+)?);"
-//2. "    default $1 {\n        get().$2($3);\n    }"
-//3. "(get\(\)\.[^(]+)\([\w]+ ([^),]+.*)\)"
-//3. "$1($2)"
 public interface PooledConnection extends Connection, Supplier<Connection> {
 
     @SneakyThrows
